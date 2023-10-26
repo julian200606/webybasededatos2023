@@ -2,18 +2,15 @@
 
 $server = "localhost";
 $user = "root";
-$password = "12345678"; //si tienes xampp es $password = ""
+$password = ""; //es el password del CHAMP
+$baseDatos = "cetis107";
 
 //conexion
-
-$conexion = new mysqli($server, $user, $password);
-
+$baseDatos = "cetis107";
+$conexion = new mysqli($server, $user, $password,$baseDatos);
 
 //revisar conexion
-
 if($conexion->connect_error){
-    die("fallo la conexion" . $conexion->connect_error);
-
-
+    die("fallló la conexión" . $conexion->connect_error);
 }
 ?>
