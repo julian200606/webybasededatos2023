@@ -3,14 +3,14 @@
 $server = "localhost";
 $user = "root";
 $password = ""; //es el password del CHAMP
-$baseDatos = "cetis107";
+$base_de_datos = "cetis107";
 
 //conexion
-$baseDatos = "cetis107";
-$conexion = new mysqli($server, $user, $password,$baseDatos);
+$base_de_datos = "cetis107";
+$conexion = new mysqli($server, $user, $password, $base_de_datos); 
 
 //revisar conexion
 if($conexion->connect_error){
-    die("fallló la conexión" . $conexion->connect_error);
+    die("falló la conexión" . $conexion->connect_error);
 }
 ?>

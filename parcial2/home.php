@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-  <?php include 'menu.php'?>
+<?php include 'menu.php' ?>
     <div class="container">
         <div class="row">
             <div class="col-12"><br><br>
                 <center><h1>Sistema de gestión de control escolar</h1>
                 <h3>CETis 107</h3>
-                <img src="logocetis.png" alt="" width="15%" class="img-fluid"></center>
+                <img src="logoDGETI.png" alt="" width="30%" class="img-fluid"></center>
             </div>
         </div>
-    </div>
+    </div><br>
     <footer class="text-center"><hr>
         <span>CETis107 Web App &copy; 2023</span>
     </footer>
