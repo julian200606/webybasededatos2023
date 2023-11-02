@@ -13,6 +13,7 @@
     include 'conexion.php';
 
     $id = $_GET["id"];
+    
     $sql = "SELECT * FROM alumnos WHERE id=" .$id;
 
     $datos = $conexion->query($sql);
@@ -26,7 +27,7 @@
         <div class="row">
             <div class="col-12 card m-4">
                 <form action="actualizarRegistro.php" method="POST">
-                    <input type="hidden" name="id" value="<?php echo $alumno[id]; ?>">
+                    <input type="hidden" name="id" value="<?php echo $alumno["id"]; ?>">
                     <div class="form-group">
                         <label for="">Nombre: </label>
                         <input value="<?php echo $alumno["nombre"]; ?>" name="nombre" type="text" class="form-control" placeholder="Teclea el nombre del alumno:" required>
