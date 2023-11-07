@@ -10,14 +10,10 @@
         header("Location: consultarAlumnos.php");
         $conexion->close();
         exit;
-
-
-    }else{
-        echo"<h2>ocurrio un error</h2> <p>Error; " .$sql . "<br>" . $conexion->error . "</p>";
+    } else {
+        echo "<h2>Ocurrió un error</h2> <p>Error: " .$sql . "<br>" . $conexion->error . "</p>";
         echo "<h3><a href='consultarAlumnos.php'>Regresar a alumnos</a></h3>";
         $conexion->close();
     }
-
-
 
 ?>
