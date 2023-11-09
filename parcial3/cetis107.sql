@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-11-2023 a las 02:59:31
+-- Tiempo de generación: 08-11-2023 a las 03:17:20
 -- Versión del servidor: 10.1.39-MariaDB
 -- Versión de PHP: 7.3.5
 
@@ -49,15 +49,16 @@ INSERT INTO `alumnos` (`id`, `nombre`, `numero_control`, `semestre`, `edad`, `tu
 (4, 'Campos Rodriguez Hector Javier', '21325067070468', 5, 17, 'Vespertino', 1),
 (5, 'Rocha Magana Ruben', '21325061070254', 5, 17, 'Vespertino', 1),
 (6, 'Castro Samaniego Evelyn Melissa', '21325061070308', 5, 17, 'Vespertino', 0),
-(7, 'Cabrera Diarte Luis Felipe', '21325061070257', 5, 17, 'Matutino', 1);
+(7, 'Cabrera Diarte Luis Felipe', '21325061070257', 5, 17, 'Matutino', 1),
+(8, 'Luis Ãngel Castro Molina', '21325061070325', 5, 16, 'VESPERTINO', 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `materia`
+-- Estructura de tabla para la tabla `materias`
 --
 
-CREATE TABLE `materia` (
+CREATE TABLE `materias` (
   `id` bigint(20) NOT NULL,
   `nombre` varchar(100) NOT NULL,
   `semestre` int(11) NOT NULL,
@@ -65,14 +66,16 @@ CREATE TABLE `materia` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `materia`
+-- Volcado de datos para la tabla `materias`
 --
 
-INSERT INTO `materia` (`id`, `nombre`, `semestre`, `especialidad`) VALUES
+INSERT INTO `materias` (`id`, `nombre`, `semestre`, `especialidad`) VALUES
 (1, 'Quimica', 5, 'Programacion'),
-(2, 'Fisica', 3, 'Contabilidad'),
-(3, 'Calculo', 6, 'Construccion'),
-(4, 'Sociales', 4, 'Electronica');
+(2, 'Calculo', 1, 'Contaduria'),
+(3, 'Topografia', 6, 'Construccion'),
+(4, 'Ingles', 4, 'Ofimatica'),
+(5, 'Fisica', 5, 'Electronica'),
+(6, 'Geografia', 5, 'PROGRAMACION');
 
 --
 -- Índices para tablas volcadas
@@ -85,9 +88,9 @@ ALTER TABLE `alumnos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `materia`
+-- Indices de la tabla `materias`
 --
-ALTER TABLE `materia`
+ALTER TABLE `materias`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -98,13 +101,13 @@ ALTER TABLE `materia`
 -- AUTO_INCREMENT de la tabla `alumnos`
 --
 ALTER TABLE `alumnos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT de la tabla `materia`
+-- AUTO_INCREMENT de la tabla `materias`
 --
-ALTER TABLE `materia`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `materias`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
